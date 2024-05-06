@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <title>PDF Reducer</title>
+</head>
+<body>
+
+    <h1> Bem vindo ao pdf reducer!</h1>
+    <h3>Você deseja <a href="{{url_for('reduce')}}">Reduzir</a> ou <a href="{{ url_for('convert') }}">Converter</a></h3><br>
+    <form action="/log" method="post">
+        <input type="submit" name="btnlog" id="btnlog" value="Gerar relatório do mês">
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <title>PDF Reducer</title>
+</head>
+<body>
+
+    <h1> Bem vindo ao pdf reducer!</h1>
+    <h3>Insira o arquivo que deseja converter para txt</h3>
+    <form action="/pdf_reduce" method="post" enctype="multipart/form-data">
+        <input type="file" id="arquivo" name="arquivo"><br/>
+        <label>Seleciona e resolução em DPI desejada: </label>
+        <select name="selectDPI" id="selectDPI">
+            <option value="72">72</option>
+            <option value="100">100</option>
+            <option value="150">150</option>
+            <option value="200">200</option>
+            <option value="250">250</option>
+            <option value="300">300</option>
+        </select><br>
+        <input type="submit" id="btnEnviar" name="btnEnviar" value="Enviar">
+    </form>
+
+</body>
+
+</html>
